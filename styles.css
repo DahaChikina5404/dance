@@ -87,12 +87,9 @@ html, a {
         color: #E89B2B;
 }
 
-.header__link:visited {
-        color: #404043;
-}
 
 
-@media (max-width: 600px) { 
+@media (max-width: 768px) { 
         .header__navigation {
                 flex-wrap: wrap;     
         }
@@ -246,7 +243,6 @@ html, a {
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
-        gap: 10px;
 }
 
 .hero_text_small {
@@ -262,7 +258,7 @@ html, a {
 .special_offer__link {
         color: #E89B2B;
         font-weight: 300;
-        font-size: 22px;
+        font-size: 16px;
         cursor: pointer;
 }
 
@@ -272,7 +268,7 @@ html, a {
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
         .hero_size {
                 width: 100%;
         }       
@@ -311,26 +307,53 @@ html, a {
 }
 
 
+/* Нахлёст текста */
+
 .directions_title__dark {
+        position:relative;
         font-weight: 700;
         font-size: 80px;
         text-align: left;
         color: rgba(255, 255, 255, 0.14);
         padding-left: 100px;
         padding-top: 100px;
-        padding-bottom: 100px;
+        padding-bottom: 70px;
 }
 
 
 .directions_title__white {
+        position: absolute;
         font-weight: 700;
         font-size: 40px;
         text-align: left;
         color: #ffffff;
-        padding-left: 100px;
-        padding-top: 100px;
-        padding-bottom: 100px;
+        top: 140px;
+        left: 130px;
 }
+
+
+@media (max-width: 420px) {
+        .directions_title__dark {
+                font-weight: 600;
+                font-size: 60px;
+        }
+        .directions_title__white {
+                font-weight: 600;
+                font-size: 30px;
+        }
+}
+
+@media (max-width: 390px) {
+        .directions_title__dark {
+                font-weight: 600;
+                font-size: 60px;
+        }
+        .directions_title__white {
+                font-weight: 600;
+                font-size: 30px;
+        }
+}
+
 
 /* Модульная сетка */
 
@@ -346,69 +369,76 @@ html, a {
 
 .directions__block-1 {
         background: url(/image/dance-mix.png);
-        height: 450px;
         width: 380px;
+        height: 450px;
         background-size: cover;
         background-position: center top;
 }
 
 .directions__block-2 {
         background: url(/image/for-kids.png);
-        height: 450px;
         width: 380px;
+        height: 450px;
         background-size: cover;
         background-position: center top;
 }
 
 .directions__block-3 {
         background: url(/image/car-mix.png);
-        height: 450px;
         width: 380px;
+        height: 450px;
         background-size: cover;
         background-position: center top;
 }
 
 .directions__block-4 {
         background: url(/image/pole-dance.png);
-        height: 450px;
         width: 380px;
+        height: 450px;
         background-size: cover;
         background-position: center top;
 }
 
 .directions__block-5 {
         background: url(/image/Sky-Jumping.png);
-        height: 450px;
         width: 380px;
+        height: 450px;
         background-size: cover;
         background-position: center top;
 }
 
 .directions__block-6 {
         background: url(/image/hip-hop.png);
-        height: 450px;
         width: 380px;
+        height: 450px;
         background-size: cover;
         background-position: center top;
 }
 
 .directions_text {
-        padding-top: 300px;
-        padding-left: 20px;
+        margin-top: 330px;
+        margin-right: 200px;
+        padding: 10px 0px 0px 5px;
         color: #ffffff;
-        font-size: 30px;
+        font-size: 24px;
         font-weight: 500;
+        background-color: #202021;
 }
+
 
 .directions__button {
         display: flex;
         gap: 30px;
-        margin-top: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-top: 7px solid #202021;
+        background-color: #404043af;
 }
+
 
 .directions__button_orange {
         width: 120px;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 600;
         color: white;
         padding: 5px;
@@ -426,10 +456,10 @@ html, a {
 
 .directions__button_white {
         width: 120px;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 600;
         color: #ffffff;
-        padding: 10px;
+        padding: 5px;
         background: none;
         cursor: pointer;
         border: 2px solid #ffffff;
@@ -439,29 +469,42 @@ html, a {
         color: #E89B2B;
 }
 
-@media (max-width: 600px) {       
+@media (max-width: 768px) {       
         .directions__modular_grid {
                 flex-direction: column;
+                align-items: center;
         }
         .directions__block-1 {
-                width: 100%;
+                width: 70%;
         }
         .directions__block-2 {
-                width: 100%;
+                width: 70%;
         }
         .directions__block-3 {
-                width: 100%;
+                width: 70%;
         }
         .directions__block-4 {
-                width: 100%;
+                width: 70%;
         }
         .directions__block-5 {
-                width: 100%;
+                width: 70%;
         }
         .directions__block-6 {
-                width: 100%;
+                width: 70%;
         }
+        .directions_text {
+                margin-right: 400px;
+        }       
+        /* .directions__button {
+                display: flex;
+                gap: 30px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                border-top: 7px solid #202021;
+                background-color: #404043af;
+        } */
 }
+
 
 @media (max-width: 420px) {       
         .directions__modular_grid {
@@ -557,7 +600,7 @@ html, a {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        align-items: flex-end;
+        align-items: baseline;
         gap: 10px;
         padding-top: 20px;
 }
@@ -575,7 +618,7 @@ html, a {
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
         .studios__modular_grid {
                 flex-direction: column;
                 width: 100%;
@@ -594,33 +637,195 @@ html, a {
 @media (max-width: 390px) {
         .studios__modular_grid {
                 flex-direction: column;
-                width: 100%;
-        
+                width: 100%;   
 }
 }
 
+
+
+/* Абонементы  */
+
+
+.passes_background {
+        background-color: #202021;
+        width: 100%;
+        padding-bottom: 30px;
+        border-bottom: 5px solid #E89B2B;
+}
+
+
+.passes_background__image {
+        background: url(/image/background-passes.png);
+        background-position: top center;
+        background-size: cover;
+        border-bottom: 5px solid #E89B2B;
+}
+
+
+.passes_background__text {
+        font-weight: 600;
+        font-size: 48px;
+        color: #ffffff;
+        width: 80%;
+        padding: 30px 0px 40px 70px;
+}
+
+
+.passe__button {
+        width: 140px;
+        font-size: 16px;
+        font-weight: 600;
+        color: white;
+        padding: 10px;
+        margin: 0px 0px 20px 70px;
+        background-color: #E89B2B;
+        cursor: pointer;
+        border: none;
+}
+
+.passe__button:hover {
+        color: #E89B2B;
+        background-color: #ffffff;
+}
 
 
 
 /* Футер (модульные сетки)*/
 
+
 .footer {
     background: url(/image/background-footer.png);
     background-size: cover;
     background-position: center top;
-    margin-top: 50px;
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
+
+.footer__modular_grid {
+        display: flex;
+        flex-direction: row;
+        gap: 180px;
+}
+
+
+.modular_grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+}
+
+.modular_grid__logo {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+}
+
+
+.modular_grid__column {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+}
+
+
+.footer__link {
+        font-weight: 400;
+        font-size: 22px;
+        color: #B9B5BD;
+}
+
+.footer__link:hover {
+        color: #E89B2B;
+}
+
+
+.modular_grid__right {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+}
+
+
+.footer_text__contacts {
+        font-size: 32px;
+        font-weight: 300;
+        color: #ffffff;
+}
+
+.footer_text__address {
+        font-weight: 500;
+        font-size: 26px;
+        color: #ffffff;
+}
+
+.footer__social_media {
+        font-size: 32px;
+        font-weight: 300;
+        color: #ffffff;
+}
+
+
+.footer_text__phone {
+        font-weight: 300;
+        font-size: 26px;
+        color: #ffffff;
+}
 
 
 /* Кнопка ВВЕРХ */
 
 .scroll_up {
      font-size: 50px;
-     color: #E89B2B;
+     color: #e89c2b;
      position: fixed;
      right: 30px;
      bottom: 30px;
+}
+
+@media (max-width: 600px) {      
+        .footer__modular_grid {
+                flex-direction: column;
+                gap: 30px;
+        }
+        .footer_section-1 {
+                width: 100%;
+                font-size: 14px;
+        }
+        .footer_section-2 {
+                width: 100%;
+        }
+        .footer_section-3 {
+                width: 100%;
+                gap: 20px;
+        }
+        .scroll_up {
+                font-size: 40px; 
+        }
+}
+
+@media (max-width: 420px) { 
+        .footer_section-1 {
+                font-size: 16px;
+                
+        }
+        .footer_license {
+                font-size: 14px;
+        }
+        .scroll_up {
+                font-size: 40px; 
+        }
+}
+
+@media (max-width: 390px) { 
+        .footer_section-1 {
+                font-size: 16px;
+                
+        }
+        .footer_license {
+                font-size: 14px;
+        }
+        .scroll_up {
+                font-size: 40px; 
+        }
 }
