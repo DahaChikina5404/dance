@@ -129,6 +129,20 @@ html, a {
         }
 }
 
+@media (max-width: 320px) {
+        .header__navigation {
+                flex-wrap: wrap;      
+        }
+        .navigation {
+                padding-top: 10px;
+                gap: 10px;
+        }
+        .header__link {     
+                font-weight: 400;
+                font-size: 14px;   
+        }
+}
+
 
 /* Два контейнера (5 точек и заголовок сайта) */
 
@@ -355,7 +369,7 @@ html, a {
 }
 
 
-/* Модульная сетка */
+/* Модульная сетка. Направления (6 секций с 2 кнопками) */
 
 .directions__modular_grid {
         display: flex;
@@ -705,7 +719,8 @@ html, a {
 .footer__modular_grid {
         display: flex;
         flex-direction: row;
-        gap: 180px;
+        justify-content: space-between;
+        gap: 130px;
 }
 
 
@@ -743,7 +758,8 @@ html, a {
 .modular_grid__right {
         display: flex;
         flex-direction: row;
-        gap: 50px;
+        justify-content: space-between;
+        gap: 90px;
 }
 
 
@@ -754,10 +770,18 @@ html, a {
 }
 
 .footer_text__address {
-        font-weight: 500;
-        font-size: 26px;
+        font-weight: 400;
+        font-size: 24px;
         color: #ffffff;
 }
+
+
+.modular_grid__social_media {
+        display: flex;
+        align-items: baseline;
+        gap: 10px;
+}
+
 
 .footer__social_media {
         font-size: 32px;
@@ -767,8 +791,8 @@ html, a {
 
 
 .footer_text__phone {
-        font-weight: 300;
-        font-size: 26px;
+        font-weight: 400;
+        font-size: 24px;
         color: #ffffff;
 }
 
